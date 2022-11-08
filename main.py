@@ -19,25 +19,25 @@ print(price)
 for p in price:
     if p
 
-# price_list = []
-# total = 0
-# for i in range(len(price)):
-#     if i==0:
-#         pass
-#     else:
-#         price_list.append(price[i])
-#
-# # print(price_list)
-# final_price = price_list[0]+price_list[1]+price_list[2]
-# # final_price = int(final_price)
-# print(final_price)
+price_list = []
+total = 0
+for i in range(len(price)):
+    if i==0:
+        pass
+    else:
+        price_list.append(price[i])
 
-# if final_price < 603:
-#     with smtplib.SMTP("smtp.gmail.com", port= 587) as connection :
-#         connection.starttls()
-#         connection.login(user=LOGIN_ID, password=PASSWORD)
-#         connection.sendmail(from_addr=LOGIN_ID, to_addrs="gitesh16patidar@yahoo.com",
-#                             msg=f"Flipkart price drop alert\n Wildcraft bag now available below 603 !\n Link:{URL}")
+# print(price_list)
+final_price = price_list[0]+price_list[1]+price_list[2]
+# final_price = int(final_price)
+print(final_price)
+
+if final_price < 603:
+    with smtplib.SMTP("smtp.gmail.com", port= 587) as connection :
+        connection.starttls()
+        connection.login(user=LOGIN_ID, password=PASSWORD)
+        connection.sendmail(from_addr=LOGIN_ID, to_addrs="gitesh16patidar@yahoo.com",
+                            msg=f"Flipkart price drop alert\n Wildcraft bag now available below 603 !\n Link:{URL}")
 
 
 
